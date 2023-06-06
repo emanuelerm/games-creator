@@ -16,6 +16,7 @@
 				<use xlink:href="#s-text" class="text-copy"></use>
 				<use xlink:href="#s-text" class="text-copy"></use>
 				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
 			</g>
 		</svg>
 	</div>

@@ -25,28 +25,33 @@
 }
 
 .text-copy:nth-child(1){
-	stroke: #4d163d;
+	stroke: #196774;
 	animation-delay: -1;
 }
 
 .text-copy:nth-child(2){
-	stroke: #BD0037;
+	stroke: #ffffff;
 	animation-delay: -2s;
 }
 
 .text-copy:nth-child(3){
-	stroke: #BD0034;
+	stroke: #90a19d;
 	animation-delay: -3s;
 }
 
 .text-copy:nth-child(4){
-	stroke: #BD0034;
+	stroke: #ef3b2d;
 	animation-delay: -4s;
 }
 
 .text-copy:nth-child(5){
-	stroke: #FDB731;
+	stroke: #196774;
 	animation-delay: -5s;
+}
+
+.text-copy:nth-child(6){
+	stroke: #ef3b2d;
+	animation-delay: -6.8s;
 }
 @keyframes stroke-offset{
 	100% {stroke-dashoffset: -35%;};
