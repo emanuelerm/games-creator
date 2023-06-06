@@ -1,16 +1,18 @@
-main {
-    height: 90vh;
-}
 
 .scroll {
     height: 500px;
     overflow-x: scroll;
 }
 
+img{
+    width: 75%;
+}
+
 .card {
     min-width: calc((100% / 4) - 30px) !important;
     margin-top: 40px;
     height: 400px;
+    background-color: #2e3338;
 }
 
 .scroll:first-child {
@@ -36,5 +38,6 @@ main {
 }
 
 .card:hover {
-    scale: 1.2;
+    scale: 1.06;
+    box-shadow: 0px 1px 20px 1px #ef3b2d;
 }
