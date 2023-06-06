@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+@vite('resources/scss/animation/carousel.scss')
 <main class="d-flex align-items-center">
     <div class="container scroll d-flex gap-5">
         @foreach ($characters as $character)
