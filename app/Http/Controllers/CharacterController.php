@@ -15,7 +15,8 @@ class CharacterController extends Controller
      */
     public function index()
     {
-        //
+        $characters = Character::all();
+        return view('characters.index', compact('characters'));
     }
 
     /**
@@ -25,7 +26,7 @@ class CharacterController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -36,7 +37,7 @@ class CharacterController extends Controller
      */
     public function store(StoreCharacterRequest $request)
     {
-        //
+        
     }
 
     /**
@@ -47,7 +48,7 @@ class CharacterController extends Controller
      */
     public function show(Character $character)
     {
-        //
+        return view('characters.show', compact('character'));
     }
 
     /**
@@ -58,7 +59,7 @@ class CharacterController extends Controller
      */
     public function edit(Character $character)
     {
-        //
+        return view('characters.edit', compact('character'));
     }
 
     /**
@@ -70,7 +71,8 @@ class CharacterController extends Controller
      */
     public function update(UpdateCharacterRequest $request, Character $character)
     {
-        //
+        $character->update();
+        return redirect()->route('characters.show', $character->id);
     }
 
     /**
@@ -81,6 +83,7 @@ class CharacterController extends Controller
      */
     public function destroy(Character $character)
     {
-        //
+        $character->delete();
+        return redirect()->route('characters.index');
     }
 }
