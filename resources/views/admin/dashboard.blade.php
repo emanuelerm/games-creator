@@ -12,7 +12,7 @@
 					<div>
 						<ul class="p-0 m-0">
 							<li class="px-3 m-0">
-								<a class="text-dark fw-semibold" href="{{route('characters.index')}}">Characters card</a>
+								<a class="text-dark fw-semibold" href="{{route('admin.characters.index')}}">Characters card</a>
 							</li>
 							<li class="px-3 m-0">
 								<a class="text-dark fw-semibold" href="{{url('/')}}">Come back to home</a>
