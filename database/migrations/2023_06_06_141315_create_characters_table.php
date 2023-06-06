@@ -14,7 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('characters', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->string('name', 200)->nullable(false);
+            $table->text('description')->nullable(true);
+            $table->integer('attack')->nullable(false);
+            $table->integer('defence')->nullable(false);
+            $table->integer('speed')->nullable(false);
+            $table->integer('life')->nullable(false);
             $table->timestamps();
         });
     }
