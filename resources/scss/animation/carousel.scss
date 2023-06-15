@@ -12,6 +12,8 @@ img {
     margin-top: 40px;
     height: 400px;
     background-color: #2e3338;
+    position: relative;
+    transition: transform 0.2s ease;
 }
 
 .scroll:first-child {
