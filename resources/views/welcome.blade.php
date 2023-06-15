@@ -4,12 +4,12 @@
 	<div class="my-container">
 		<svg class="my-svg" viewBox="0 0 1260 300">
 			<symbol id="s-text">
-				<text 
+				<text
 				text-anchor="middle" x="50%" y="80%">
-				Matteo ha fatto una figata
+				Matteo lo prende in culo
 				</text>
 			</symbol>
-		
+
 			<g class="g-ants">
 				<use xlink:href="#s-text" class="text-copy"></use>
 				<use xlink:href="#s-text" class="text-copy"></use>
