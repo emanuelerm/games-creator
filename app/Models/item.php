@@ -5,10 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Character extends Model
+class item extends Model
 {
     use HasFactory;
-    public function item(){
-        return $this->belongsToMany(Item::class);
+
+    public function character(){
+        return $this->belongsToMany(Character::class);
     }
 }
