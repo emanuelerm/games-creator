@@ -5,7 +5,7 @@
 		<svg class="my-svg" viewBox="0 0 1260 100">
 			<symbol id="s-text">
 				<text text-anchor="middle" x="50%" y="80%">
-					benvenuti in
+					Benvenuti in
 				</text>
 			</symbol>
 
