@@ -1,10 +1,9 @@
-
 .scroll {
     height: 500px;
     overflow-x: scroll;
 }
 
-img{
+img {
     width: 75%;
 }
 
@@ -42,7 +41,12 @@ img{
     box-shadow: 0px 1px 20px 1px #ef3b2d;
 }
 
-
-*{
+* {
     transition: 0.6s;
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
