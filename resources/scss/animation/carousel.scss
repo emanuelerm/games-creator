@@ -13,7 +13,6 @@ img {
     height: 400px;
     background-color: #2e3338;
     position: relative;
-    transition: transform 0.3s ease;
     transform-style: preserve-3d;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -41,13 +40,12 @@ img {
 }
 
 .card:hover {
-    scale: 1.06;
     box-shadow: 0px 1px 20px 1px #ef3b2d;
 }
 
-* {
-    transition: 0.6s;
-}
+// * {
+//     transition: 0.6s;
+// }
 
 .truncate {
     white-space: nowrap;
