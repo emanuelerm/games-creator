@@ -6,7 +6,7 @@
 			<symbol id="s-text">
 				<text
 				text-anchor="middle" x="50%" y="80%">
-				Matteo lo prende in culo
+                Game creator
 				</text>
 			</symbol>
 
