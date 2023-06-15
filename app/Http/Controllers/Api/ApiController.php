@@ -9,9 +9,10 @@ use Database\Seeders\CharacterSeeder;
 
 class ApiController extends Controller
 {
+    protected $guarded = ['_token'];
     public function index()
     {
-        $character = Character::with('items')->paginate(5);
+        $character = Character::paginate(5);
         return response()->json([
             'success' => true,
             'results' => $character
@@ -21,7 +22,7 @@ class ApiController extends Controller
 
     public function show($slug)
     {
-        $character = Character::with('item')->where('slug', $slug)->first();
+        $character = Character::with('items')->where('slug', $slug)->first();
 
         if($character){
         return response()->json([
