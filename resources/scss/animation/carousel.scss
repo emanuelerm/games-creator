@@ -13,7 +13,9 @@ img {
     height: 400px;
     background-color: #2e3338;
     position: relative;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .scroll:first-child {
