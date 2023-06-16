@@ -9,13 +9,12 @@ use Database\Seeders\CharacterSeeder;
 
 class ApiController extends Controller
 {
-    protected $guarded = ['_token'];
     public function index()
     {
-        $character = Character::paginate(5);
+        $characters = Character::paginate(5);
         return response()->json([
             'success' => true,
-            'results' => $character
+            'results' => $characters
         ]);
     }
 
