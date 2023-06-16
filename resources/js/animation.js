@@ -67,3 +67,45 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    let carousel = document.querySelector(".scroll");
+    let scrollPosition = 0; // Posizione di scorrimento corrente
+    let targetScrollPosition = 0; // Posizione di scorrimento target
+    let isScrolling = false; // Flag per indicare se è in corso un'animazione di scorrimento
+
+    carousel.addEventListener("wheel", function (e) {
+        e.preventDefault();
+
+        // Calcola la direzione dello scroll e l'incremento di scorrimento
+        let scrollDirection = e.deltaY > 0 ? 1 : -1;
+        let scrollIncrement = 40; // Modifica questo valore a tuo piacimento
+
+        // Calcola la nuova posizione di scorrimento target
+        targetScrollPosition += scrollDirection * scrollIncrement;
+
+        // Avvia l'animazione di scorrimento
+        if (!isScrolling) {
+            requestAnimationFrame(scrollCarousel);
+            isScrolling = true;
+        }
+    });
+
+    function scrollCarousel() {
+        // Calcola l'incremento di scorrimento basato sulla distanza tra la posizione attuale e la posizione target
+        let scrollIncrement = (targetScrollPosition - scrollPosition) * 0.1;
+
+        // Applica l'incremento di scorrimento alla posizione corrente
+        scrollPosition += scrollIncrement;
+
+        // Applica lo scorrimento al carosello
+        carousel.scrollLeft = scrollPosition;
+
+        // Continua l'animazione finché la posizione corrente e la posizione target non sono abbastanza vicine
+        if (Math.abs(scrollPosition - targetScrollPosition) > 0.5) {
+            requestAnimationFrame(scrollCarousel);
+        } else {
+            isScrolling = false;
+        }
+    }
+});
