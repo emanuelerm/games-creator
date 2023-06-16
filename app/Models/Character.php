@@ -9,7 +9,7 @@ class Character extends Model
 {
     use HasFactory;
     protected $guarded = ['_token'];
-    public function item(){
+    public function items(){
         return $this->belongsToMany(Item::class);
     }
 }

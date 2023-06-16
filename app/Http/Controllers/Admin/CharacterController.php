@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\Character;
+use App\Models\Item;
 use App\Http\Requests\StoreCharacterRequest;
 use App\Http\Requests\UpdateCharacterRequest;
 use App\Http\Controllers\Controller;
@@ -53,6 +54,8 @@ class CharacterController extends Controller
      */
     public function show(Character $character)
     {
+
+        // return $character->items;
         return view('characters.show', compact('character'));
     }
 
