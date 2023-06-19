@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name', 40)->unique();
             $table->double('cost');
+            $table->string('type');
             $table->timestamps();
         });
     }

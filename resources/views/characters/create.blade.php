@@ -15,21 +15,21 @@
                 <textarea class="form-control" name="description" id="description" cols="30" rows="10"></textarea>
             </div>
             <div class="col d-flex justify-content-between">
-                <div class="col-auto">
-                    <label for="attack">Attacco</label>
-                    <input type="number" name="attack" id="attack" class="form-control">
+                <div class="col-2">
+                    <label for="attack">Soprannome</label>
+                    <input type="text" name="subnme" id="subname" class="form-control">
                 </div>
-                <div class="col-auto">
-                    <label for="defence">Difesa</label>
-                    <input type="number" name="defence" id="defence" class="form-control">
+                <div class="col-2">
+                    <label for="defence">Ruolo</label>
+                    <input type="text" name="role" id="role" class="form-control">
                 </div>
-                <div class="col-auto">
-                    <label for="speed">Velocità</label>
-                    <input type="number" name="speed" id="speed" class="form-control">
+                <div class="col-2">
+                    <label for="speed">Provenienza</label>
+                    <input type="text" name="derivation" id="derivation" class="form-control">
                 </div>
-                <div class="col-auto">
-                    <label for="life">Vita</label>
-                    <input type="number" name="life" id="life" class="form-control">
+                <div class="col-2">
+                    <label for="life">Difficoltà</label>
+                    <input type="text" name="difficoulty" id="difficoulty" class="form-control">
                 </div>
             </div>
             <div class="d-flex justify-content-center mb-3 gap-3 mt-5">

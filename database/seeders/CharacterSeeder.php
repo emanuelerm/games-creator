@@ -4,9 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-
+use config\champs;
+use Illuminate\Support\Str;
 use App\Models\Character;
-use Faker\Generator as Faker;
 
 class CharacterSeeder extends Seeder
 {
@@ -15,16 +15,19 @@ class CharacterSeeder extends Seeder
      *
      * @return void
      */
-    public function run(Faker $faker)
+    public function run()
     {
-        for($i=0; $i < 20; $i++){
+        $characters = config('champs.champions');
+
+        foreach($characters as $character) {
             $newCharacter = new Character();
-            $newCharacter->name = $faker->name();
-            $newCharacter->description = $faker->paragraph(true);
-            $newCharacter->attack = $faker->numberBetween(25, 80);
-            $newCharacter->defence = $faker->numberBetween(20, 75);
-            $newCharacter->speed = $faker->numberBetween(20, 90);
-            $newCharacter->life = $faker->numberBetween(1, 100);
+            $newCharacter->name = $character['name'];
+            $newCharacter->subname = $character['subname'];
+            $newCharacter->slug = Str::slug($newCharacter->name, '-');
+            $newCharacter->description = $character['description'];
+            $newCharacter->role = $character['role'];
+            $newCharacter->difficoulty = $character['difficoulty'];
+            $newCharacter->image = $character['image'];
             $newCharacter->save();
         }
     }

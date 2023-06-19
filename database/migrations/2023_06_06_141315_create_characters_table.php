@@ -15,12 +15,14 @@ return new class extends Migration
     {
         Schema::create('characters', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name', 200)->nullable(false);
-            $table->text('description')->nullable(true);
-            $table->integer('attack')->nullable(false);
-            $table->integer('defence')->nullable(false);
-            $table->integer('speed')->nullable(false);
-            $table->integer('life')->nullable(false);
+            $table->string('name')->nullable(false)->unique();
+            $table->string('subname')->nullable(true)->unique();
+            $table->string('slug')->unique();
+            $table->string('derivation')->nullable(false);
+            $table->text('description', 700)->nullable(false);
+            $table->string('role')->nullable(false);
+            $table->string('difficoultly')->nullable(false);
+            $table->string('image')->nullable(false)->unique();
             $table->timestamps();
         });
     }
