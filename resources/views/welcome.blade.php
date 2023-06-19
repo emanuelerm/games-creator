@@ -22,7 +22,7 @@
 		<svg class="my-svg2" viewBox="0 0 1260 100">
 			<symbol id="s-text2">
 				<text text-anchor="middle" x="50%" y="80%">
-					Game creator
+					Champ Creator
 				</text>
 			</symbol>
 

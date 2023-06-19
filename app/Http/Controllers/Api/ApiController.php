@@ -11,7 +11,7 @@ class ApiController extends Controller
 {
     public function index()
     {
-        $characters = Character::paginate(5);
+        $characters = Character::all();
         return response()->json([
             'success' => true,
             'results' => $characters
