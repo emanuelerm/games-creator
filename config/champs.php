@@ -1,11 +1,11 @@
 <?php
 return [ 
-	$champions => [
+	'champions' => [
 		[
 			"name" => "aatrox",
 			"subname" => "la lama dei darkin",
 			"derivation" => "shurima",
-			"description" => "Un tempo onorati difensori di Shurima contro il Vuoto, Aatrox e i suoi compagni finirono per diventare una minaccia ancora maggiore per Runeterra, e vennero sconfitti solo da una subdola stregoneria dei mortali. Ma dopo secoli di prigionia Aatrox fu il primo a ritrovare la libertà, corrompendo e trasformando chi si dimostrava abbastanza folle da brandire l'arma magica che conteneva la sua essenza. Ora, con un corpo rubato, vaga per Runeterra con un brutale simulacro della sua vecchia forma, alla ricerca di un'apocalittica e tanto desiderata vendetta.",
+			"description" => "Un tempo onorati difensori di Shurima contro il Vuoto, Atrox e i suoi compagni finirono per diventare una minaccia ancora maggiore per Runeterra, e vennero sconfitti solo da una subdola stregoneria dei mortali. Ma dopo secoli di prigionia Aarox fu il primo a ritrovare la libertà, corrompendo e trasformando chi si dimostrava abbastanza folle da brandire l'arma magica che conteneva la sua essenza. Ora, con un corpo rubato, vaga per Runeterra con un brutale simulacro della sua vecchia forma, alla ricerca di un'apocalittica e tanto desiderata vendetta.",
 			"role" => "combattente",
 			"difficoulty" => "media",
 			"image" => "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg"
@@ -154,7 +154,7 @@ return [
 
 		[
 			"name" => "bel' veth",
-			"subname" => "la lama dei darkin",
+			"subname" => "la lama viola del vuoto",
 			"derivation" => "vuoto",
 			"description" => "Bel'Veth è un'imperatrice uscita da un incubo, creata dal materiale grezzo di un'intera città divorata, e costituisce la fine per tutta Runeterra... e l'inizio di una realtà mostruosa creata da lei. Spinta da epoche di storia, conoscenza e ricordi provenienti dal mondo di superficie e riadattati ai suoi scopi, Bel'Veth si nutre voracemente per saziare un bisogno sempre crescente di nuove esperienze ed emozioni, consumando tutto ciò che incontra sulla sua strada. Ma la sua brama non potrà mai essere appagata da un solo mondo, e il suo sguardo famelico inizia già a volgersi verso i vecchi padroni del Vuoto...",
 			"role" => "combattente",
@@ -167,7 +167,7 @@ return [
 			"name" => "blitzfranko",
 			"subname" => "il grande golem a bestemmie",
 			"derivation" => "Zuan",
-			"description" => "Un tempo onorati difensori di Shurima contro il Vuoto, Aatrox e i suoi compagni finirono per diventare una minaccia ancora maggiore per Runeterra, e vennero sconfitti solo da una subdola stregoneria dei mortali. Ma dopo secoli di prigionia Aatrox fu il primo a ritrovare la libertà, corrompendo e trasformando chi si dimostrava abbastanza folle da brandire l'arma magica che conteneva la sua essenza. Ora, con un corpo rubato, vaga per Runeterra con un brutale simulacro della sua vecchia forma, alla ricerca di un'apocalittica e tanto desiderata vendetta.",
+			"description" => "Un tempo onorati difensori di Shurima contro il Vuoto, Atrox e i suoi compagni finirono per diventare una minaccia ancora maggiore per Runeterra, e vennero sconfitti solo da una subdola stregoneria dei mortali. Ma dopo secoli di prigionia Atrox fu il primo a ritrovare la libertà, corrompendo e trasformando chi si dimostrava abbastanza folle da brandire l'arma magica che conteneva la sua essenza. Ora, con un corpo rubato, vaga per Runeterra con un brutale simulacro della sua vecchia forma, alla ricerca di un'apocalittica e tanto desiderata vendetta.",
 			"role" => "tank",
 			"difficoulty" => "grabbi le persone e invadi -_-",
 			"image" => "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_0.jpg"
@@ -295,7 +295,7 @@ return [
 
 		[
 			"name" => "Elise",
-			"subname" => "la lama dei darkin",
+			"subname" => "ragno schifoso",
 			"derivation" => "Noxus",
 			"description" => "Elise è una letale predatrice che vive in un palazzo sbarrato e senza luce, nel profondo della città più vecchia di Noxus. Un tempo era una mortale a capo di una potente casata, ma il morso di un malvagio semidio la trasformò in qualcosa di bello, immortale e inumano: una creatura aracnide, che attira le ignare prede nella sua ragnatela. Per mantenere la sua eterna giovinezza, Elise preferisce nutrirsi degli innocenti e di chi non ha fede. Solo in pochi sanno resistere alla sua seduzione.",
 			"role" => "Mago",
@@ -325,7 +325,7 @@ return [
 		],
 		
 	],
-	$items => [
+	'items' => [
 		[
 			"name" => "calzari di mercurio",
 			"cost" => "1000",

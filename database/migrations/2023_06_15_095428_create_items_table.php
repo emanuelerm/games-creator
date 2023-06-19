@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name', 40)->unique();
             $table->double('cost');
             $table->string('type');
+            $table->string('slug');
             $table->timestamps();
         });
     }

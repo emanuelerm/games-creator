@@ -21,7 +21,7 @@ class ItemSeeder extends Seeder
         foreach($items as $item) {
             $newItem = new item();
             $newItem->name = $item['name'];
-            $newItem->subname = $item['cost'];
+            $newItem->cost = $item['cost'];
             $newItem->slug = Str::slug($newItem->name, '-');
             $newItem->type = $item['type'];
             $newItem->save();

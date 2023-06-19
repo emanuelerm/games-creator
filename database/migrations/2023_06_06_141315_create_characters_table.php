@@ -18,10 +18,10 @@ return new class extends Migration
             $table->string('name')->nullable(false)->unique();
             $table->string('subname')->nullable(true)->unique();
             $table->string('slug')->unique();
-            $table->string('derivation')->nullable(false);
+            $table->string('derivation')->nullable(true);
             $table->text('description', 700)->nullable(false);
             $table->string('role')->nullable(false);
-            $table->string('difficoultly')->nullable(false);
+            $table->string('difficoulty')->nullable(false);
             $table->string('image')->nullable(false)->unique();
             $table->timestamps();
         });
