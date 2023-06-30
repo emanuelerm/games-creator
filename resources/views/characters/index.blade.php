@@ -10,7 +10,7 @@
                     <h5 class="m-0 truncate">{{ $character->name }}</h5>
                 </div>
                 <div>
-                    <img src="/image/chri.jpg" alt="{{$character->name }}">
+                    <img src="{{$character->image}}" alt="{{$character->name }}">
                 </div>
             </div>
 
